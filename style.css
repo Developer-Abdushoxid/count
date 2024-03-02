@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 500px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgb(112, 112, 112, 0.2);
+  }
+  
+  .card #count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 160px;
+    border: 1px solid gray;
+  }
+  
+  #inc, #dec,#reset {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.05);
+    transition:all 0.2s ease-in-out;
+  }
+  
+  #inc:hover,
+  #dec:hover,
+  #reset {
+    transform: scale(1.05);
+  }
+  
+  #inc {
+    background-color: #40e040;
+  }
+  
+  #dec {
+    background-color: #f85b5b;
+  }
+
+  #reset{
+    background-color: yellow;
+    color: black;
+    margin: 0 10px;
+  }
